@@ -58,14 +58,21 @@
 
     .subtitle {
       font-size: 1.05rem;
-      color: var(--muted);
-      margin-bottom: 8px;
+      color: #5b6573;
+      margin-bottom: 6px;
     }
 
     .affiliation {
-      color: var(--muted);
-      margin-bottom: 24px;
+      color: #5b6573;
+  	  white-space: nowrap;
+  	  margin-bottom: 6px;
     }
+
+	.email {
+  	  margin-top: 0;
+  	  margin-bottom: 0;
+  	  color: #5b6573;
+	}
 
     nav {
       border-top: 1px solid var(--line);
@@ -92,6 +99,7 @@
 
     .buttons {
       margin-top: 18px;
+  	  margin-bottom: 22px;
     }
 
     .button {
@@ -177,6 +185,24 @@
     margin-bottom: 8px;
   }
 
+	.menu-nav {
+		border-top: 1px solid #d8dee9;
+		border-bottom: 1px solid #d8dee9;
+		padding: 12px 0;
+		margin: 10px 0 0;
+	}
+
+	.menu-nav a {
+		color: #1f4e79;
+		text-decoration: none;
+		margin-right: 22px;
+		font-size: 0.98rem;
+	}
+
+	.menu-nav a:hover {
+		text-decoration: underline;
+	}
+
 	@media (max-width: 640px) {
       .page {
         padding: 28px 20px;
@@ -192,7 +218,15 @@
       }
       .header-flex {
       flex-direction: column;
-    }	
+    }
+	  .affiliation {
+		  white-space: normal;
+	  }
+
+  	  .menu-nav a {
+		  display: inline-block;
+		  margin: 0 14px 8px 0;
+	  }
     }
   </style>		
 </head>
@@ -206,15 +240,13 @@
         	<h1>Sanghyun Kim</h1>
         	<div class="subtitle">Observational Astrophysicist</div>
         	<div class="affiliation">
-          		Postdoctoral Researcher, Korea Astronomy and Space Science Institute (KASI)
+          		Postdoctoral Researcher at Korea Astronomy and Space Science Institute (KASI)
         	</div>
+			<p class="email">
+				<strong>Email:</strong>
+				<a href="mailto:sanghkim.astro@gmail.com">sanghkim.astro at gmail.com</a>
+			</p>
 		</div>
-        <nav>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#cv">CV</a>
-          <a href="#contact">Contact</a>
-        </nav>
       </header>
 
       <section class="intro">
@@ -231,6 +263,13 @@
           <a class="button" href="https://orcid.org/my-orcid?orcid=0000-0001-7556-8504" target="_blank">ORCID</a>
           <a class="button" href="https://ui.adsabs.harvard.edu/user/libraries/7N0FlFpxQU2eLRXnoS9-JQ" target="_blank">ADS</a>
         </div>
+
+		<nav>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </section>
 
       <section id="research">
