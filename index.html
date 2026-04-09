@@ -211,9 +211,13 @@
 		text-decoration: underline;
 	}
 
-	.orcid-line {
+	.orcid-row {
 		margin-top: 6px;
-  		margin-bottom: 0;
+		margin-bottom: 0;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		color: #5b6573;
 	}
 
 	.orcid-link {
@@ -221,7 +225,7 @@
   		text-decoration: none;
   		display: inline-flex;
   		align-items: center;
-  		gap: 8px;
+  		gap: 6px;
 	}
 	.orcid-link:hover {
 		text-decoration: underline;
@@ -230,7 +234,7 @@
 	.orcid-icon {
 		width: 20px;
 		height: 20px;
-		display: inline-block;
+		display: block;
 	}
 
 	@media (max-width: 640px) {
@@ -277,7 +281,7 @@
 				<a href="mailto:sanghkim@kasi.re.kr">sanghkim@kasi.re.kr</a>
 			</p>
 
-			<p class="orcid-line">
+			<p class="orcid-row">
 				<strong>ORCID:</strong>
 				<a
 					href="https://orcid.org/0000-0001-7556-8504"
