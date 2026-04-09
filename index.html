@@ -204,6 +204,28 @@
 		text-decoration: underline;
 	}
 
+	.orcid-line {
+		margin-top: 6px;
+  		margin-bottom: 0;
+	}
+
+	.orcid-link {
+		color: #5b6573;
+  		text-decoration: none;
+  		display: inline-flex;
+  		align-items: center;
+  		gap: 8px;
+	}
+	.orcid-link:hover {
+		text-decoration: underline;
+	}
+
+	.orcid-icon {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+	}
+
 	@media (max-width: 640px) {
       .page {
         padding: 28px 20px;
@@ -247,6 +269,18 @@
 				<strong>Email:</strong>
 				<a href="mailto:sanghkim.astro@gmail.com">sanghkim.astro at gmail.com</a>
 			</p>
+
+			<p class="orcid-line">
+				<a
+					href="https://orcid.org/0000-0001-7556-8504"
+					target="_blank"
+        			rel="noopener noreferrer"
+        			class="orcid-link"
+      			>
+					<img src="orcid-ID.png" alt="ORCID" class="orcid-icon">
+					<span>0000-0001-7556-8504</span>
+				</a>
+    </p>
 		</div>
       </header>
 
